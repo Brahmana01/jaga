@@ -12,7 +12,7 @@ import Reveal from '../../components/animation/Reveal'
 import { useNavigate } from 'react-router-dom'
 
 import Stepper from '../../components/forms/Stepper'
-import { Badge } from '../../components/common/Ui'
+import { Badge } from '../../components/common/UI'
 import { useReport } from '../../context/ReportContext'
 
 const severityLabels = {

@@ -9,7 +9,7 @@ import {
 
 import { Link, useSearchParams } from 'react-router-dom'
 
-import { Card, Badge } from '../../components/common/Ui'
+import { Card, Badge } from '../../components/common/UI'
 
 const statusConfig = {
   aman: { label: 'AMAN', tone: 'safe' },

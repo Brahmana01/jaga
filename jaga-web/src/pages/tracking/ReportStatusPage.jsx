@@ -9,7 +9,7 @@ import {
 
 import Reveal from '../../components/animation/Reveal'
 import { useSearchParams, Link } from 'react-router-dom'
-import { Badge, Card } from '../../components/common/Ui'
+import { Badge, Card } from '../../components/common/UI'
 
 const statusConfig = {
   pending: { label: 'Menunggu Verifikasi', tone: 'warning', icon: Clock3 },

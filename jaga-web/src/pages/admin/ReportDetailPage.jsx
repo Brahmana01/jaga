@@ -13,7 +13,7 @@ import {
 
 import Reveal from '../../components/animation/Reveal'
 import { Link, useParams } from 'react-router-dom'
-import { Badge, Card } from '../../components/common/Ui'
+import { Badge, Card } from '../../components/common/UI'
 
 const categoryLabels = {
   pinjol_ilegal: 'Pinjol Ilegal',
