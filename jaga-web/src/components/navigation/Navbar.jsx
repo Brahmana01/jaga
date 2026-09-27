@@ -129,14 +129,6 @@ function Navbar() {
         <div className="navbar-actions">
 
           <Link
-            to="/login"
-            className="navbar-login"
-          >
-            Masuk
-          </Link>
-
-
-          <Link
             to="/laporkan"
             className="btn btn-primary"
           >
@@ -202,15 +194,6 @@ function Navbar() {
             </NavLink>
 
           ))}
-
-
-          <Link
-            to="/login"
-            className="navbar-mobile-link"
-            onClick={closeMobileMenu}
-          >
-            Masuk
-          </Link>
 
 
           <Link

@@ -97,4 +97,3 @@ Versi Node.js disarankan menggunakan versi LTS.
 Clone repository:
 
 ```bash
-git clone https://github.com/USERNAME/jaga-web-template.git

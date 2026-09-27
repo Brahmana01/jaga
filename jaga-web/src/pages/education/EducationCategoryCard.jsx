@@ -1,7 +1,3 @@
-import {
-  ArrowRight,
-} from 'lucide-react'
-
 import Reveal
   from '../../components/animation/Reveal'
 
@@ -66,24 +62,6 @@ function EducationCategoryCard({
           <p>
             {category.description}
           </p>
-
-        </div>
-
-
-        <div className="education-category-footer">
-
-          <span>
-            Pelajari lebih lanjut
-          </span>
-
-
-          <span className="education-arrow">
-
-            <ArrowRight
-              size={15}
-            />
-
-          </span>
 
         </div>
 

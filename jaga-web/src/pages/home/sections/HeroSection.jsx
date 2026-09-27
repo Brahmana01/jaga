@@ -3,8 +3,10 @@ import {
 } from 'lucide-react'
 
 import {
-  Link,
+  useNavigate,
 } from 'react-router-dom'
+
+import { useState } from 'react'
 
 import TypewriterText
   from '../../../components/animation/TypewriterText'
@@ -20,6 +22,17 @@ import FloatingParticles
 
 
 function HeroSection() {
+
+  const [query, setQuery] = useState('')
+  const navigate = useNavigate()
+
+  const handleSearch = () => {
+    if (!query.trim()) {
+      navigate('/cek-aplikasi')
+      return
+    }
+    navigate(`/hasil-pemeriksaan?q=${encodeURIComponent(query)}`)
+  }
 
   return (
 
@@ -97,11 +110,20 @@ function HeroSection() {
 
           <div className="search-box">
 
-            <TypewriterInput />
+            <TypewriterInput
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  handleSearch()
+                }
+              }}
+            />
 
 
-            <Link
-              to="/cek-aplikasi"
+            <button
+              type="button"
+              onClick={handleSearch}
               className="btn btn-primary"
             >
 
@@ -111,7 +133,7 @@ function HeroSection() {
 
               Cek Sekarang
 
-            </Link>
+            </button>
 
           </div>
 

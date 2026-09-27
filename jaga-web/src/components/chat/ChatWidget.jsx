@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import { MessageCircle, X, Send } from 'lucide-react'
+import { Bot, X, Send } from 'lucide-react'
 import './ChatWidget.css'
 
 function ChatWidget() {
@@ -105,8 +105,14 @@ function ChatWidget() {
         </div>
       )}
 
+      {!isOpen && (
+        <div className="chat-label">
+          Tanya JAGA
+        </div>
+      )}
+
       <button className="chat-toggle-button" onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? <X size={24} /> : <MessageCircle size={24} />}
+        {isOpen ? <X size={24} /> : <Bot size={28} />}
       </button>
 
     </div>

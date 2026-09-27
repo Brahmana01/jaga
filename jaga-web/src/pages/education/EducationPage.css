@@ -202,7 +202,7 @@
     relative;
 
   min-height:
-    235px;
+    190px;
 
   padding:
     25px;
@@ -356,7 +356,7 @@
 .education-category-card-v2 h2 {
 
   margin:
-    18px 0 7px;
+    18px 0 8px;
 
   font-size:
     19px;
@@ -380,88 +380,6 @@
 
   line-height:
     1.65;
-}
-
-
-/* =========================================================
-   CATEGORY FOOTER
-========================================================= */
-
-.education-category-footer {
-
-  position:
-    absolute;
-
-  left:
-    25px;
-
-  right:
-    25px;
-
-  bottom:
-    23px;
-
-  display:
-    flex;
-
-  align-items:
-    center;
-
-  justify-content:
-    space-between;
-
-  color:
-    var(--green-600);
-
-  font-size:
-    10px;
-
-  font-weight:
-    800;
-}
-
-
-.education-arrow {
-
-  width:
-    28px;
-
-  height:
-    28px;
-
-  display:
-    flex;
-
-  align-items:
-    center;
-
-  justify-content:
-    center;
-
-  border:
-    1px solid
-    rgba(16,185,129,.12);
-
-  border-radius:
-    9px;
-
-  background:
-    rgba(16,185,129,.06);
-
-  transition:
-    transform .25s ease,
-    background .25s ease;
-}
-
-
-.education-category-card-v2:hover
-.education-arrow {
-
-  transform:
-    translateX(4px);
-
-  background:
-    rgba(16,185,129,.11);
 }
 
 
@@ -861,15 +779,7 @@
   .education-category-card-v2 {
 
     min-height:
-      220px;
-
-  }
-
-
-  .education-category-footer {
-
-    bottom:
-      20px;
+      170px;
 
   }
 
